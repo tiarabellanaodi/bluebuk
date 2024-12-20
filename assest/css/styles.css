@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078D7;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+header .logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+header .title {
+    font-size: 1.5rem;
+    text-align: center;
+    flex-grow: 1;
+    font-weight: bold;
+}
+header .kembali-button {
+    background-color: white;
+    color: #0078D7;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+.form-container {
+    margin-top: 12vh;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+.form-container h2 {
+    margin: 0 0 30px;
+    color: #333;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form-group label {
+    flex: 1;
+    text-align: left;
+    color: #555;
+}
+.form-group input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-group ::placeholder {
+    color: #d8d8d8;
+}
+.button-login {
+    display: flex;
+    justify-content: center;
+
+}
+.button-login button {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    margin-bottom: 15px;
+    padding: 10px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0; 
+}
+
+.button-login button:hover {
+    background-color: #005bb5;
+}
+.signupin-link {
+    margin-top: 10px;
+    color: #555;
+}
+.signupin-link a {
+    color: #0078D7;
+    text-decoration: none;
+    font-weight: bold;
+}
+.signupin-link a:hover {
+    text-decoration: underline;
+}
+
+.role-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.role-buttons button {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    margin-bottom: 15px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0; 
+}
+.role-buttons p{
+    text-align: left;
+    color: #555;
+    margin: 0; /* Pastikan tidak ada margin bawaan */
+    padding: 10px 0;
+}
