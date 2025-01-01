@@ -1,0 +1,50 @@
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter select {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.order-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.order-details table, th, td {
+    border: 1px solid #ddd;
+}
+
+.order-details th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.order-details th {
+    background-color: #f1f1f1;
+}
+
+.download {
+    text-align: right;
+}
+
+.download button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

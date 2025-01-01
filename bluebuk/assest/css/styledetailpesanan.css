@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d4;
+    padding: 15px 20px;
+    color: white;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar .menu-btn {
+    cursor: pointer;
+    background-color: white;
+    color: #0078d4;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.navbar .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar .menu-btn:hover + .dropdown-menu,
+.navbar .dropdown-menu:hover {
+    display: block;
+}
+
+/* Body */
+.container {
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.biodata {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.biodata p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttons .proses-btn {
+    background-color: #0078d4;
+}
+
+.buttons .proses-btn:hover {
+    background-color: #005ea2;
+}
+
+.buttons .tolak-btn {
+    background-color: #d40000;
+}
+
+.buttons .tolak-btn:hover {
+    background-color: #a00000;
+}
