@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Pilihan</title>
-    <link rel="stylesheet" href="assest/css/styleindex.css">
+    <link rel="stylesheet" href="../css/styleindex.css">
 </head>
 <body>
     <!-- Kontainer Utama -->
     <div class="container">
         <!-- Kotak Login Pembeli -->
-        <a href="pembeli/loginpembeli.html">
+        <a href="pembeli/loginpembeli.php">
             <div class="card">
                 <img src="https://via.placeholder.com/300x200" alt="Login Pembeli">
                 <h2>Login Pembeli</h2>
@@ -19,7 +19,7 @@
         </a>
 
         <!-- Kotak Login Penjual -->
-        <a href="penjual/loginpenjual.html">
+        <a href="penjual/loginpenjual.php">
             <div class="card">
                 <img src="https://via.placeholder.com/300x200" alt="Login Penjual">
                 <h2>Login Penjual</h2>
@@ -29,3 +29,7 @@
     </div>
 </body>
 </html>
+
+ <?php
+
+ ?>

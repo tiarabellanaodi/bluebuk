@@ -10,7 +10,7 @@ class Database {
         $connection = mysqli_connect($this->host,$this->username,$this->password,$this->db);
         return $connection;
     }
-    function read() {
+    function read($query) {
         $conn = $this->connect();
         $result = mysqli_query($conn,$query);
 
@@ -26,7 +26,7 @@ class Database {
         }
     }
 
-    function save() {
+    function save($query) {
         $conn = $this->connect();
         $result = mysqli_query($conn,$query);
 
