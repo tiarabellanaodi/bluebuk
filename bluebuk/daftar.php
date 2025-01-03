@@ -1,7 +1,21 @@
 <?php 
-    echo "<pre>";
-    print_r($_POST);
-    echo "</pre>";
+    include("classes/connect.php");
+    include("classes/signup.php");
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $signup = new Signup();
+    $result = $signup->evaluate($_POST);
+    
+    if ($result) {
+        echo $result; // Tampilkan kesalahan jika ada
+    } else {
+        echo "Pendaftaran berhasil!";
+    }
+   // echo "<pre>";
+   // print_r($_POST);
+   // echo "</pre>";
+}
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,19 +38,19 @@
         <form method= "post" action="">
             <div class="form-group">
                 <label for="nama">Nama</label>
-                <input type="text" id="name" placeholder="Masukan Nama">
+                <input type="text" id="name" name="nama" placeholder="Masukan Nama">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Masukan Password anda">
+                <input type="password" id="password" name="password" placeholder="Masukan Password anda">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Masukan email anda">
+                <input type="text" id="email" name="email" placeholder="Masukan email anda">
             </div>
             <div class="form-group">
-                <label for="email">Alamat</label>
-                <input type="text" id="alamat" placeholder="Masukan alamat anda">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" name="alamat" placeholder="Masukan alamat anda">
             </div>
             <div class="form-group">
                 <label>Masuk <br>Sebagai</label>
