@@ -67,7 +67,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 <input type="submit" id="submit-button" value="Daftar">
             </div>
             <div class="signupin-link">
-                <p>punya akun? <a href="/index.html">Log in</a></p>
+                <p>punya akun? <a href="/index.php">Log in</a></p>
             </div>
         </form>
     </div>

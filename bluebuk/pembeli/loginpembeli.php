@@ -1,3 +1,27 @@
+<?php 
+session_start();
+
+    include("../classes/connect.php");
+    include("../classes/login.php");
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $login = new Login();
+    $result = $login->evaluate($_POST);
+    
+     if ($result != "") {
+        // Tampilkan kesalahan jika ada
+        echo "<script>alert('$result');</script>";
+    } else {
+        // Login berhasil, arahkan ke halaman utama
+        header("Location: menupembeli.php");
+        exit;
+    }
+   // echo "<pre>";
+   // print_r($_POST);
+   // echo "</pre>";
+}
+   
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,20 +39,22 @@
         <a href="../index.php" class="kembali-button">Kembali</a>
     </header>
     <div class="form-container">
-        <h2>Log in Pembeli</h2> 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Masukan Email Anda">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Masukan Password Anda">
-        </div>
-        <div class="button-login">
-            <button>log in</button>
-        </div>
+        <form method="post">
+            <h2>Log in Pembeli</h2> 
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" type="text" id="email" placeholder="Masukan Email Anda">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" type="password" id="password" placeholder="Masukan Password Anda">
+            </div>
+            <div class="role-buttons">
+                    <input type="submit" id="submit-button" value="Log in">
+                </div>
+        </form>
         <div class="signupin-link">
-            <p>Tidak punya akun? <a href="..//daftar.php">Daftar</a></p>
+            <p>Tidak punya akun? <a href="../daftar.php">Daftar</a></p>
         </div>
     </div>
 </body>
