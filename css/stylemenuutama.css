@@ -1,0 +1,173 @@
+/* Reset dan pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d4;
+    padding: 15px 20px;
+    color: white;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.header h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Tambahkan ini untuk mendorong elemen ke kanan */
+}
+
+.header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header .navbar {
+    position: relative;
+}
+
+.header .menu-btn {
+    padding-left: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.header .menu-btn:hover {
+    transform: rotate(90deg);
+}
+
+.header .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 100;
+}
+
+.header .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #0078d4;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.header .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.header:hover .dropdown-menu {
+    display: block;
+}
+
+/* Kontainer */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Informasi Depot */
+.depot-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.depot-info h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #0078d4;
+    font-weight: bold;
+}
+
+.depot-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.depot-info button {
+    padding: 10px 15px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.depot-info button:hover {
+    background-color: #005ea2;
+}
+
+/* Pesanan yang Sedang Diproses */
+.processing-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.processing-section .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #0078d4;
+}
+
+.depot-card {
+    background-color: #f9fafb;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.depot-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
